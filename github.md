@@ -15,9 +15,10 @@ versionName: 版本命名
 `git branch -M main`
 7. 连接repository
 `git remote add origin git@github.com:#userName/repositoryName.git`
-**Prob: NO 密钥配对** 
 userName:github用户名
 repositoryName:存储库名
+>**如果写错了这两处，goto " 重新remote repository"**
+>**Prob: NO 密钥配对** 
 8. 上传
 `git push -u origin main`
 
@@ -30,4 +31,11 @@ repositoryName:存储库名
 `git remote add origin git@github.com:#userName/repositoryName.git`
 4. 上传
 `git push -u origin main`
-**Prob: NO 上传不同分支方式**
+>**Prob: NO 上传不同分支方式**
+
+## 重新remote repository
+1. 查看远程repository URL 
+`git remote -v`
+2. 修改URL
+`git remote set-url origin git@github.com:#userName/repositoryName.git`
+
